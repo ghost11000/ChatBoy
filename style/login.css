@@ -1,0 +1,110 @@
+.login{
+    position: fixed;
+    top: 10%;
+    left: 30%;
+    width: 480px;
+    height: 520px;
+    z-index: 100;
+    border-radius: 25px;
+    background-color: #ffffff46;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login h1{
+    font-family: 'Space Grotesk', sans-serif;
+    margin-top: 50px;
+}
+
+.icons{
+    width: 25px;
+}
+.login form label{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.container-info{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.container-info label h3 {
+    font-size: 1.4rem; 
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-info label input {
+    width: 70%;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: #ffffff4b;
+    backdrop-filter: blur(1px);
+}
+.container-info label input:focus {
+    outline: none;
+}
+.container-info label textarea:focus{
+    outline: none;
+}
+.container-info label textarea{
+    width: 70%;
+    height: 80px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: #ffffff4b;
+    backdrop-filter: blur(1px);
+}
+.container-info button{
+    width: 120px;
+    height: 40px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #00000085;
+    letter-spacing: 2px;
+} 
+
+@media only screen and (max-width: 320px ){
+    body{
+        overflow-x: hidden;
+    }
+    .login{
+        background-color: #00000075;
+        left: 10%;
+        width: 80%;
+        backdrop-filter: blud(10px);
+    }
+    .login h1{
+        color: #fff;
+        margin-left: 40px;
+    }
+    .container-info button{
+        background-color: #fff;
+        color: #000;
+    }
+    .container-info label input{
+        background-color: #ffffff91;
+        backdrop-filter: blur(10px);
+        font-size: .9rem;
+    }
+    .container-info label textarea{
+        background-color: #ffffff91;
+        backdrop-filter: blur(10px);
+    }
+}

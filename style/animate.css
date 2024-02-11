@@ -1,0 +1,77 @@
+body{
+    overflow-y: hidden;
+    background-color:#39f;
+}
+/*
+CAPA 1 #5cadff
+CAPA 2 #aed6ff
+CAPA 3 #e7f3ff
+CAPA 4 #fdfeff
+*/
+
+.container-animation{
+    width: 50%;
+    height: 100vh;
+    position: relative;
+}
+.container-animation div {
+    position: absolute;
+    border-radius:50%;
+    animation: change 5s infinite alternate;
+    box-shadow: 0px 0px 15px 0px #0000005b;
+}
+
+.capa1{
+    width: 200px;
+    height: 200px;
+    background-color: #fdfeff;
+    bottom: -11%;
+    left: -12%;
+    z-index: 50;
+}
+
+.capa2 {
+    width: 400px;
+    height: 400px;
+    background-color: #e7f3ff;
+    bottom: -17%;
+    left: -18%;
+    z-index: 40;
+}
+
+
+.capa3 {
+    width: 600px;
+    height: 600px;
+    background-color: #aed6ff;
+    bottom: -29%;
+    left: -30%;
+    z-index: 30;
+}
+.capa4 {
+    width: 800px;
+    height: 800px;
+    background-color: #5cadff;
+    bottom: -39%;
+    left: -40%;
+    z-index: 20;
+}
+
+@keyframes change {
+    0% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1.7);
+    }
+
+    100% {
+        transform: scale(1.7);
+    }
+
+    0% {
+        transform: scale(1.3);
+    }
+}
+
