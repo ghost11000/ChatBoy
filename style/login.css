@@ -80,7 +80,7 @@
     letter-spacing: 2px;
 } 
 
-@media only screen and (max-width: 320px ){
+@media only screen and (max-width: 721px ){
     body{
         overflow-x: hidden;
     }
